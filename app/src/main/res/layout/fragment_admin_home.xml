@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/back"
+    tools:context=".admin_Home">
+
+    <!-- todo Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_global"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CV_BTN_form"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginEnd="@dimen/margin_global"
+                android:layout_marginStart="@dimen/margin_global"
+                android:layout_marginBottom="@dimen/margin_global"
+                android:elevation="8dp"
+                app:cardCornerRadius="3dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:id="@+id/crc_form"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginEnd="@dimen/margin_global"
+                        android:src="@drawable/paste" />
+
+                    <TextView
+                        android:id="@+id/Tv_form"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:text="Form"
+                        android:layout_toEndOf="@+id/crc_form"
+                        android:textColor="@color/black"
+                        android:textSize="23sp"
+                        android:textStyle="bold"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="@dimen/margin_global"/>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_below="@+id/CV_BTN_form"
+                android:id="@+id/CV_BTN_list"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginStart="@dimen/margin_global"
+                android:layout_marginBottom="@dimen/margin_global"
+                android:layout_marginEnd="@dimen/margin_global"
+                android:elevation="8dp"
+                app:cardCornerRadius="3dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:id="@+id/crc_list"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginEnd="@dimen/margin_global"
+                        android:src="@drawable/list_home" />
+
+                    <TextView
+                        android:id="@+id/Tv_list"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:text="Request"
+                        android:layout_toEndOf="@+id/crc_list"
+                        android:textColor="@color/black"
+                        android:textSize="23sp"
+                        android:textStyle="bold"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="@dimen/margin_global"/>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_below="@+id/CV_BTN_list"
+                android:id="@+id/CV_BTN_history"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginStart="@dimen/margin_global"
+                android:layout_marginBottom="@dimen/margin_global"
+                android:layout_marginEnd="@dimen/margin_global"
+                android:elevation="8dp"
+                app:cardCornerRadius="3dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:id="@+id/crc_history"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginEnd="@dimen/margin_global"
+                        android:src="@drawable/history" />
+
+                    <TextView
+                        android:id="@+id/Tv_history"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:text="History"
+                        android:layout_toEndOf="@+id/crc_history"
+                        android:textColor="@color/black"
+                        android:textSize="23sp"
+                        android:textStyle="bold"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="@dimen/margin_global"/>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+        <!--
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_global">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CV_active_home"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/colorAccent"
+                app:cardCornerRadius="@dimen/card_elevation"
+                android:layout_marginTop="@dimen/margin_global"
+                android:layout_marginStart="@dimen/margin_global"
+                android:layout_marginEnd="@dimen/margin_global"
+                android:layout_marginBottom="@dimen/margin_global"
+                app:cardElevation="@dimen/margin_global">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/margin_global">
+
+                    <TextView
+                        android:id="@+id/TV_active_home"
+                        android:layout_toEndOf="@+id/IV_active_home"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="TEST"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:layout_margin="@dimen/card_elevation"
+                        android:layout_centerVertical="true"
+                        android:textAlignment="center"/>
+
+                    <ImageView
+                        android:id="@+id/IV_active_home"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/outline_list_alt_black_48dp"
+                        android:layout_margin="@dimen/card_elevation"
+                        android:layout_centerVertical="true" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+        -->
+    </RelativeLayout>
+
+</FrameLayout>

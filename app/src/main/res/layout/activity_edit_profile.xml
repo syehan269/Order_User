@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".edit_profile">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:minHeight="?attr/actionBarSize">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            app:theme="@style/AppTheme"
+            app:titleTextColor="@color/white"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appBar"
+        android:orientation="vertical">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/RL_editUSR_Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal">
+<!--
+                    <ImageView
+                                android:id="@+id/IV_sub_name"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_margin="20dp"
+                                android:src="@drawable/baseline_person_black_48dp" />
+-->
+                    <RelativeLayout
+                        android:id="@+id/RL_Edit_Name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:id="@+id/RL_sub_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/back">
+
+                            <TextView
+                                android:id="@+id/tv_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/margin_sekunder"
+                                android:text="Name"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/RL_sub_name">
+
+                            <ImageView
+                                android:id="@+id/IV_sub_name"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_margin="20dp"
+                                android:src="@drawable/baseline_person_black_48dp" />
+
+                            <TextView
+                                android:id="@+id/TV_edituSR_name"
+                                android:layout_toEndOf="@+id/IV_sub_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:text="Name here"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/RL_editUSR_email"
+                android:layout_below="@+id/RL_editUSR_depart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal">
+<!--
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="20dp"
+                        android:src="@drawable/baseline_mail_black_48dp"/>
+-->
+                    <RelativeLayout
+                        android:id="@+id/RL_Edit_Email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp">
+
+                        <RelativeLayout
+                            android:id="@+id/RL_sub_email"
+                            android:background="@color/back"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/tv_email"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/margin_sekunder"
+                                android:textStyle="bold"
+                                android:text="E-mail"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_below="@id/RL_sub_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/IV_sub_email"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_margin="20dp"
+                                android:src="@drawable/baseline_mail_black_48dp"/>
+
+                            <TextView
+                                android:id="@+id/TV_edituSR_email"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_toEndOf="@+id/IV_sub_email"
+                                android:layout_centerVertical="true"
+                                android:text="email here"
+                                android:textColor="@color/black"
+                                android:textSize="16sp"
+                                android:layout_marginEnd="@dimen/margin_global"
+                                android:layout_marginBottom="5dp"/>
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/RL_editUSR_depart"
+                android:layout_below="@+id/RL_editUSR_Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal">
+<!--
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="20dp"
+                        android:src="@drawable/outline_security_black_48dp"/>
+-->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp">
+
+                        <RelativeLayout
+                            android:id="@+id/RL_sub_depart"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/back">
+
+                            <TextView
+                                android:id="@+id/tv_type"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/margin_sekunder"
+                                android:textStyle="bold"
+                                android:text="Department"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_below="@+id/RL_sub_depart"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/IV_sub_depart"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_margin="20dp"
+                                android:src="@drawable/outline_security_black_48dp"/>
+
+                            <Spinner
+                                android:visibility="gone"
+                                android:layout_width="match_parent"
+                                android:spinnerMode="dropdown"
+                                android:layout_toEndOf="@id/IV_sub_depart"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="@dimen/margin_global"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:id="@+id/SPN_editUSR"
+                                android:text="departement"
+                                android:textSize="17sp"
+                                android:layout_toEndOf="@id/IV_sub_depart"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="@dimen/margin_global"
+                                android:textColor="@color/black"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/RL_editUSR_pass"
+                android:layout_below="@+id/RL_editUSR_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal">
+<!--
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="20dp"
+                        android:src="@drawable/baseline_vpn_key_black_48dp"/>
+-->
+                    <RelativeLayout
+                        android:id="@+id/RL_Edit_Pass"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp">
+
+                        <RelativeLayout
+                            android:id="@+id/RL_sub_pass"
+                            android:layout_width="match_parent"
+                            android:background="@color/back"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/tv_pass"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/margin_sekunder"
+                                android:textStyle="bold"
+                                android:text="Password"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_below="@+id/RL_sub_pass"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/IV_sub_pass"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_margin="20dp"
+                                android:src="@drawable/baseline_vpn_key_black_48dp"/>
+
+                            <TextView
+                                android:id="@+id/TV_edituSR_pass"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_toEndOf="@id/IV_sub_pass"
+                                android:text="pass here"
+                                android:layout_centerVertical="true"
+                                android:textColor="@color/black"
+                                android:textSize="16sp"
+                                android:layout_marginEnd="@dimen/margin_global"
+                                android:layout_marginBottom="5dp"/>
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_below="@id/RL_editUSR_pass"
+                android:layout_width="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_delete_editUSR"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Delete Account"
+                    app:strokeColor="@color/undone"
+                    android:visibility="gone"
+                    app:rippleColor="@color/undone"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:textColor="@color/undone"
+                    android:layout_centerHorizontal="true"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

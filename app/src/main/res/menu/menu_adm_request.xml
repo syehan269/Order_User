@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/Avia_ADM"
+        android:title="Aviability"/>
+
+    <item
+        android:title="Completed"
+        android:id="@+id/comp_ADM"/>
+
+</menu>

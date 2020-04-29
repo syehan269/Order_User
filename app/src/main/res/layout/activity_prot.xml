@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".prot_A">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:theme="@style/AppTheme"
+        app:titleTextColor="@color/white"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+    </androidx.appcompat.widget.Toolbar>
+
+  <Button
+      android:id="@+id/add_level"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Add Now"
+      android:layout_below="@id/toolbar"
+      android:layout_margin="@dimen/margin_global"/>
+
+  <include layout="@layout/progress_indicator"
+      android:layout_marginTop="@dimen/margin_global"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/progressBar_adm_level"
+      android:layout_centerHorizontal="true"
+      android:layout_centerVertical="true"/>
+
+  <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/recycle_lev"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_below="@id/add_level">
+
+  </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>
