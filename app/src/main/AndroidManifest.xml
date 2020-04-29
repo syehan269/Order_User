@@ -27,25 +27,6 @@
             />
         <activity android:name=".Change_pass"
             android:parentActivityName=".edit_profile"/>
-        <activity
-            android:name=".adminRequest"
-            android:parentActivityName=".adminHome" />
-        <activity
-            android:name=".history_agenda_SPR"
-            android:parentActivityName=".admin_MainActivity" />
-        <activity
-            android:name=".handle_list_admin"
-            android:parentActivityName=".admin_MainActivity" />
-        <activity android:name=".admin_MainActivity" />
-        <activity
-            android:name=".admin_editUSR"
-            android:parentActivityName=".adminControl" />
-        <activity
-            android:name=".admin_detailUSR"
-            android:parentActivityName=".adminControl" />
-        <activity
-            android:name=".read_request_SPR"
-            android:parentActivityName=".handle_list_admin" />
         <activity android:name=".prot_A" />
         <activity
             android:name=".readRequest"
@@ -54,26 +35,15 @@
             android:name=".handle_list"
             android:parentActivityName=".MainActivity" />
         <activity android:name=".Change_Email" />
-        <activity android:name=".search_result" />
         <activity
             android:name=".edit_profile"
             android:parentActivityName=".MainActivity" />
-        <activity
-            android:name=".adminDetail"
-            android:parentActivityName=".adminHome" />
-        <activity
-            android:name=".admin_category"
-            android:parentActivityName=".adminHome" />
         <activity
             android:name=".history_agenda"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".form"
             android:parentActivityName=".MainActivity" />
-        <activity
-            android:name=".adminControl"
-            android:parentActivityName=".adminHome" />
-        <activity android:name=".adminHome" />
         <activity android:name=".splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -84,9 +54,6 @@
         <activity
             android:name=".forget"
             android:parentActivityName=".login" />
-        <activity
-            android:name=".register"
-            android:parentActivityName=".adminControl" />
         <activity android:name=".login" />
         <activity android:name=".MainActivity" />
     </application>
